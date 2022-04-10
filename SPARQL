@@ -1,0 +1,15 @@
+#Timeline of the past 5 US presidents
+#defaultView:Timeline
+SELECT ?president ?presidentLabel ?presidentDescription ?start ?end ?image 
+WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?president p:P39 ?position;
+             wdt:P27 wd:Q30;
+             wdt:P31 wd:Q5.
+  ?position ps:P39 wd:Q11696; 
+            pq:P580 ?start;
+            pq:P582 ?end.
+  OPTIONAL{?president wdt:P18 ?image}
+}
+ORDER BY DESC(?start)
+LIMIT 5
