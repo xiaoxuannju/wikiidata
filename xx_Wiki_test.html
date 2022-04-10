@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="d6dc3981-8edc-4e82-9baa-ce28f2a13c15" data-root-id="1013"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1148">
+          {"f27ef13f-9fcd-41d7-9890-b75302c8e0b4":{"defs":[],"roots":{"references":[{"attributes":{},"id":"1008","type":"DateFormatter"},{"attributes":{"editor":{"id":"1019"},"field":"president_name","formatter":{"id":"1018"},"title":"president_name"},"id":"1004","type":"TableColumn"},{"attributes":{},"id":"1023","type":"StringEditor"},{"attributes":{"columns":[{"id":"1003"},{"id":"1004"},{"id":"1006"},{"id":"1009"},{"id":"1011"},{"id":"1012"}],"height":500,"source":{"id":"1002"},"view":{"id":"1015"},"width":1500},"id":"1013","type":"DataTable"},{"attributes":{},"id":"1024","type":"StringFormatter"},{"attributes":{"editor":{"id":"1025"},"field":"image","formatter":{"id":"1024"},"title":"image"},"id":"1012","type":"TableColumn"},{"attributes":{},"id":"1017","type":"StringEditor"},{"attributes":{},"id":"1025","type":"StringEditor"},{"attributes":{},"id":"1021","type":"StringEditor"},{"attributes":{},"id":"1020","type":"StringEditor"},{"attributes":{},"id":"1026","type":"UnionRenderers"},{"attributes":{"editor":{"id":"1021"},"field":"end time","formatter":{"id":"1008"},"title":"end time"},"id":"1009","type":"TableColumn"},{"attributes":{},"id":"1027","type":"Selection"},{"attributes":{},"id":"1016","type":"StringFormatter"},{"attributes":{"editor":{"id":"1017"},"field":"series ordinal","formatter":{"id":"1016"},"title":"series ordinal"},"id":"1003","type":"TableColumn"},{"attributes":{},"id":"1018","type":"StringFormatter"},{"attributes":{"data":{"end time":{"__ndarray__":"AABAdNFxd0IAAIDDkpt1QgAAAGIV73FCAAAAATCFbEIAAAA+NSxlQg==","dtype":"float64","order":"little","shape":[5]},"end year":[2021,2017,2009,2001,1993],"image":["https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/220px-Donald_Trump_official_portrait.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/220px-President_Barack_Obama.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/220px-George-W-Bush.jpeg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/220px-Bill_Clinton.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/George_H._W._Bush_presidential_portrait_%28cropped%29.jpg/220px-George_H._W._Bush_presidential_portrait_%28cropped%29.jpg"],"index":[1,2,3,4,5],"president_name":["Donald Trump","Barack Obama","George W. Bush","Bill Clinton","George H. W. Bush"],"replaces":["Barack Obama","George W. Bush","Bill Clinton","George H. W. Bush","Ronald Reagan"],"series ordinal":[45,44,43,42,41],"served term":[4,8,8,8,4],"start time":{"__ndarray__":"AACAw5KbdUIAAABiFe9xQgAAAAEwhWxCAAAAPjUsZUIAAIDct39hQg==","dtype":"float64","order":"little","shape":[5]},"start year":[2017,2009,2001,1993,1989]},"selected":{"id":"1027"},"selection_policy":{"id":"1026"}},"id":"1002","type":"ColumnDataSource"},{"attributes":{},"id":"1019","type":"StringEditor"},{"attributes":{"source":{"id":"1002"}},"id":"1015","type":"CDSView"},{"attributes":{},"id":"1022","type":"StringFormatter"},{"attributes":{"editor":{"id":"1023"},"field":"replaces","formatter":{"id":"1022"},"title":"replaces"},"id":"1011","type":"TableColumn"},{"attributes":{},"id":"1005","type":"DateFormatter"},{"attributes":{"editor":{"id":"1020"},"field":"start time","formatter":{"id":"1005"},"title":"start time"},"id":"1006","type":"TableColumn"}],"root_ids":["1013"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('1148').textContent;
+                  const render_items = [{"docid":"f27ef13f-9fcd-41d7-9890-b75302c8e0b4","root_ids":["1013"],"roots":{"1013":"d6dc3981-8edc-4e82-9baa-ce28f2a13c15"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
