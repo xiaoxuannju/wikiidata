@@ -1,2 +1,2 @@
-# wikiidata
+# wikidata
 d 
