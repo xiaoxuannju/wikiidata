@@ -1,5 +1,9 @@
 # wikidata
 
+First Method: SPARQL query
+presenting the information in the Wikidata Query service
+
+Second Method: Web data crawling by BeautifulSoup, re and data visualization by bokeh in Python
 
 the screenshot for the result of the second method
 
